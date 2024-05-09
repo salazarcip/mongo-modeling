@@ -1,0 +1,19 @@
+use("platzi_store")
+
+db.stores.insertOne({
+    storeId: "st001",
+    name: "globalstore",
+    address: "calle 134"
+
+})
+
+
+db.stores_details.insertOne({
+    storeId: "st001",
+    description: "mas info",
+    manager: {
+        email: "salaza@gmail.com",
+        cel: "98562871"
+    }
+
+})

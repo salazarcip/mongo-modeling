@@ -8,6 +8,5 @@ db.users3.insertOne({
     age: 19,
     role: "seller",
     isSingle: true,
-    social_acounts: ["twitter", "facebook"]
 
 })

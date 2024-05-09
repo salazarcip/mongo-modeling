@@ -3,7 +3,7 @@ use("platzi_store")
 db.getCollectionInfos()
 
 db.runCommand({
-        collMod: "users3",
+        collMod: "users2",
         validator: {
             $jsonSchema: {
                 bsonType: 'object',

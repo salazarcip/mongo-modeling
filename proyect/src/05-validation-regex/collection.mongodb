@@ -1,6 +1,6 @@
 use("platzi_store")
 
-db.createCollection("users3", {
+db.createCollection("users2", {
     validator: {
         $jsonSchema: {
             bsonType: 'object',

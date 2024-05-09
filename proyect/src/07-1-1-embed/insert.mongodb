@@ -1,0 +1,23 @@
+use("platzi_store")
+
+db.users3.insertOne({
+    name: "andrea",
+    lastname: "salazar",
+    email: "andrea@gmail.com",
+    password: "Azaste1i",
+    age: 19,
+    role: "customer",
+    isSingle: true,
+    social_account: ["twitter", "facebook"],
+    address: {
+        street: "calle 123",
+        city: "cali",
+        zip: "1028"
+    },
+    shipping_address: {
+        street: "calle 987",
+        city: "cali",
+        zip: "1087"
+    }
+
+})

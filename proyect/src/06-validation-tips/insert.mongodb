@@ -1,12 +1,13 @@
 use("platzi_store")
 
-db.users2.insertOne({
+db.users3.insertOne({
     name: "cipriano",
     lastname: "salazar",
     email: "andressal@gmail.com",
     password: "Azaste1i",
     age: 19,
     role: "seller",
-    isSingle: true
+    isSingle: true,
+    social_acounts: ["twitter", "facebook"]
 
 })

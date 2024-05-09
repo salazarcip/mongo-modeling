@@ -1,0 +1,12 @@
+// Relaciones
+
+Enbeber; dentro del mismo documento
+Referenciar; dsando el ObjectId de otra colección
+Un método para identificar cuál opción usar nos hacemos la siguiente pregunta:
+
+¿Qué tan frecuente es CONSULTADA la información?
+¿Qué tan frecuente es ACTUALIZADA la información?
+La información se consulta en CONJUNTO o POR PARTES?
+Si se consulta en conjunto se recomienda EMBEBIDA Si se consulta por partes se recomienda REFERENCIADA
+
+En el 90% de los casos, cuando hay una relacion 1:1, esta suele estar EMBEBIDA.
