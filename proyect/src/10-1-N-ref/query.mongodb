@@ -6,8 +6,6 @@ db.users.findOne({_id: "",ObjectId: ObjectId('663cce88e96577513150b60e')})
 
 db.orders.aggregate([
     {
-
-
     $lookup: {
         from: "users",
         localField: "user_id",
@@ -17,6 +15,23 @@ db.orders.aggregate([
 }
 ])
 
+
+db.orders.aggregate([
+    {
+        $match: {
+            _id: ObjectId('663cce88e96577513150b60e')
+        }
+    },
+    {
+    $lookup: {
+        from: "users",
+        localField: "user_id",
+        foreignField: "_id",
+        as: "user"
+             }
+    }
+
+])
 
 // 663cce39853692611fedf21b
 

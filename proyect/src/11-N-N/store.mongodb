@@ -1,0 +1,17 @@
+db.storese.insertMany([
+    {
+        name: 'Store A',
+        products_ids: [
+            ObjectId("6641d47ddf7d28e0fd334527"),
+            ObjectId("6641d47ddf7d28e0fd334528")
+        ]
+    },
+    {
+        name: 'Store B',
+        products_ids: [
+            ObjectId("6641d47ddf7d28e0fd334529"),
+            ObjectId("6641d47ddf7d28e0fd334527"),
+            ObjectId("6641d47ddf7d28e0fd334528")
+        ]
+    },
+])
