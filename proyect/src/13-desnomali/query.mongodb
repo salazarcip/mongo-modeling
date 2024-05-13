@@ -1,20 +1,5 @@
 use("platzi_store")
-db.users3.find()
+
+
 db.products.find()
-db.storese.find()
-
-
-// PRODUCTS - 6641d47ddf7d28e0fd334527
-// STORES - 6641d6a2f1848aa875c71655
-
-
-db.products.aggregate([
-  { 
-    $lookup: { // buscar las id que necesitamos
-      from: 'storese',
-      localField: 'storese_ids',
-      foreignField: '_id',
-      as: 'stores'
-    }
-  }
-])
+db.storese.findOne({_id: ObjectId('6641dcbabe5712f52d0bd9e5')})
